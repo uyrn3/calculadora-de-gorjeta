@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Calculadora de Gorjeta</title>
 </head>
@@ -14,6 +15,7 @@
         <img src="./images/logo.svg" alt="logo do spliter">
     </header>
     <main>
+
         <section class="informacoes">
             <form action="">
                 <div class="conta">
@@ -25,6 +27,7 @@
                 </div>
                 <div class="gorjeta">
                     <label for="outra">Selecione a gorjeta %</label>
+
                     <div>
                         <input type="button" value="5%">
                         <input type="button" value="10%">
@@ -36,9 +39,6 @@
                 </div>
 
                 <div class="pessoas">
-                    <label for="pessoas">Quantidade de pessoas</label>
-                    <p id="erro">Não pode ser zero</p>
-                    <div>
                     <div class="textos">
                         <label for="pessoas">Quantidade de pessoas</label>
                         <p id="erro">Não pode ser zero</p>
@@ -50,21 +50,26 @@
                 </div>
             </form>
         </section>
+
         <section class="resultados">
             <div class="gorjeta-total">
                 <p>
                     <strong>Gorjeta</strong> <br>
                     / pessoa
                 </p>
+
                 <strong>R$ 0.00</strong>
             </div>
+
             <div class="total">
                 <p>
                     <strong>Total</strong> <br>
                     / pessoa
                 </p>
+
                 <strong>R$ 0.00</strong>
             </div>
+
             <button>Limpar</button>
         </section>
     </main>
