@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora de Gorjeta</title>
 </head>
 <body>
@@ -10,7 +11,6 @@
         <img src="./images/logo.svg" alt="logo do spliter">
     </header>
     <main>
-
         <section class="informacoes">
             <form action="">
                 <div class="conta">
@@ -21,14 +21,16 @@
                     </div>
                 </div>
                 <div class="gorjeta">
-	@@ -28,20 +29,40 @@
+                    <label for="outra">Selecione a gorjeta %</label>
+                    <div>
+                        <input type="button" value="5%">
+                        <input type="button" value="10%">
                         <input type="button" value="15%">
                         <input type="button" value="25%">
                         <input type="button" value="50%">
                         <input type="number" name="outra" id="outra" placeholder="Outra">
                     </div>
                 </div>
-
                 <div class="pessoas">
                     <label for="pessoas">Numero de pessoas</label>
                     <p>Não pode ser zero</p>
@@ -39,23 +41,19 @@
                 </div>
             </form>
         </section>
-
         <section class="resultados">
             <div class="gorjeta-total">
                 <p>
                     <strong>Gorjeta</strong> <br>
                     / pessoa
                 </p>
-
                 <strong>$ 0.00</strong>
             </div>
-
             <div class="total">
                 <p>
                     <strong>Total</strong> <br>
                     / pessoa
                 </p>
-
                 <strong>$ 0.00</strong>
             </div>
         </section>
